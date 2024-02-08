@@ -508,7 +508,8 @@ collectionSection{
    display: flex;
    justify-content: space-between;
    align-items:center;
-   margin: -160px 0 0 5px ;
+   padding: 0 40px;
+   margin: -160px 0 0 0 ;
  
  }
  .topHeader button{
