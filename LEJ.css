@@ -1,0 +1,652 @@
+*{
+  margin: 0;
+
+  font-family: 'Cormorant', serif;
+  
+}
+body{
+  background-color: #efefefff;
+}
+/*---- HEADER---------*/
+#navbar {
+  background-color: transparent; /* Initial background color */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  /* Other styles for your navbar */
+}
+/*---- TOP HEADER---------*/
+.topHeader{
+  position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   margin: -80px 0 0 0 ;
+ 
+ }
+ .topHeader button{
+   color: #efefefff;
+   font-size: 3em;
+   background-color: transparent;
+   border: none;
+   margin: 0 1em;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ .hBleft img{
+   width: 20em;
+   margin: 1em 10em 0 13em;
+ }
+ .hBright {
+   margin: 0 10em 0 28em ;
+ }
+ .hBright a{
+   margin-left: 2em;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ /*---- CENTER HEADER---------*/
+ .video-container {
+   position:absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   overflow: hidden;
+   z-index: -1; /* Ensure video is behind other content */
+ }
+ #video-background {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /
+ }
+ /*---- BOTTOM HEADER---------*/
+ .bottomHeader{
+   margin:5em 0 0 30em ;
+   padding: 4em 0 0 25em;
+   /*background-color: #80002068 */
+ }
+ .word1{
+   width: 280px;
+   margin: 0 0 -60px 0;
+ }
+ .word2{
+   width: 800px;
+   margin:0 0 0 1em;
+ }
+ .hTitle {
+   color: white;
+   font-size: 10em;
+ }
+ .h2Title {
+   font-weight: 100;
+   color: #efefefff;
+   font-size: 4em;
+   margin: -2.5em 0 0 9em;
+  
+ }
+ .sBblock button{
+  font-size: 17px;
+   color: rgb(0,0,0);
+   padding: 1.2em;
+   margin: 8em 0 0 30em;
+ }
+ .sBblock button:hover{
+   color: #efefefff;
+   background-color:#800020;
+   border: none;
+ }
+ /*------ Main ------*/
+ main{
+   margin: 400px 0;
+ }
+ /*------- Intro Block ---------*/
+ .introBlock{
+   display: flex;
+   margin:8em 23em;
+ }
+ .introBlockCenter{
+  margin:10em 3em;
+ }
+ .oTblock h1{
+   color:#C9A9A6;
+   font-size: 2.5em;
+   margin-bottom: 2em;
+ }
+ .oTblock p{
+   width: 26em;
+   font-size: 1.6em;
+ }
+ .lMbtn {
+   color: #800020;
+   font-weight: 600;
+   font-size: 1.5em;
+   margin: 4em  0;
+ }
+ .hands{
+   width: 25em;
+   height: 19em;
+   margin-top:18em ;
+   
+ }
+ .cup{
+   width: 35em;
+ 
+ }
+ /*------- Collection Block ---------*/
+ 
+ .collectionBlock{
+   display: flex;
+   flex-direction: row-reverse;
+   background: rgb(239,239,239);
+background: linear-gradient(0deg, rgba(239,239,239,1) 0%, rgba(201,169,166,1) 50%, rgba(239,239,239,1) 100%);
+ }
+ 
+ .lilypad{
+   width: 200px;
+ }
+ .chair{
+   width: 200px;
+ }
+ 
+ 
+
+
+
+@media(max-width:2000px){
+/*---- TOP HEADER---------*/
+.topHeader{
+ position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin: -80px 0 0 0 ;
+  padding: 0 3.76em;
+}
+.topHeader button{
+  color: #efefefff;
+  font-size: 2.9em;
+  background-color: transparent;
+  border: none;
+  margin: 0 1em;
+  text-shadow: 1px 1px 3px #000000;
+}
+.hBleft img{
+  width: 17em;
+  margin: 1em 7em 0 5em;
+}
+.hBright {
+  margin: 0 0em 0 6em ;
+}
+.hBright a{
+  margin-left: 2em;
+  
+  text-shadow: 1px 1px 3px #000000;
+}
+/*---- CENTER HEADER---------*/
+.video-container {
+  position:absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1; /* Ensure video is behind other content */
+}
+#video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /
+}
+/*---- BOTTOM HEADER---------*/
+.bottomHeader{
+  margin:5em 10em ;
+  padding: 7em 0 0 25em;
+  /*background-color: #80002068 */
+}
+.word1{
+  width: 200px;
+  margin: 0 0 -50px 0;
+}
+.word2{
+  width: 700px;
+  margin:.5em 0 0 1em;
+}
+.hTitle {
+  color: white;
+  font-size: 4em;
+}
+.h2Title {
+  font-weight: 100;
+  color: #efefefff;
+  font-size: 3.5em;
+  margin: -1em 0 0 7em;
+ 
+}
+.sBblock button{
+  color: rgb(0,0,0);
+  padding: 1.2em;
+  margin: 8em 0 0 25em;
+}
+.sBblock button:hover{
+  color: #efefefff;
+  background-color:#800020;
+  border: none;
+}
+
+
+
+
+
+main{
+  margin: 400px 0;
+}
+
+/*------- Intro Block ---------*/
+.introBlock{
+  display: flex;
+  margin:8em 5em;
+}
+.introBlockCenter{
+ margin:10em 3em;
+}
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+.oTblock p{
+  width: 26em;
+  font-size: 1.6em;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 4em  0;
+}
+.hands{
+  width: 25em;
+  height: 19em;
+  margin-top:18em ;
+  
+}
+.cup{
+  width: 35em;
+}
+/*------- Collection Block ---------*/
+collectionSection{
+  background-color: #C9A9A6;
+}
+.collectionBlock{
+  display: flex;
+  flex-direction: row-reverse;
+ 
+  padding: 3em 16em;
+}
+.tContainer{
+  margin:200px 35em 0 0em;
+}
+.tContainer h3{
+  font-size: 25px;
+}
+.tContainer h1{
+  font-size: 50px;
+}
+.tContainer p{
+  position: absolute;
+  font-size: 40px;
+  width: 700px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.tLcontainer p{
+  font-size: 25px;
+  width: 600px;
+  margin:1em 0;
+}
+
+
+/*
+
+.tContainer p{
+  font-size: 25px;
+  width: 800px;
+}
+.tLcontainer{
+  margin:0em;
+}
+
+
+
+*/
+.chair{
+  width: 500px;
+}
+.lilypad{
+  width: 300px;
+  margin: 23em 0 0 11em;
+}
+.white{
+  width: 350px;
+  height: 400px;
+  margin: 0 0 0 -500px;
+}
+}
+
+
+
+@media(max-width:1600px){ 
+}
+@media(max-width:1440px){
+/*---- TOP HEADER---------*/
+.topHeader{
+  position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   margin: -10px 0 0 0 ;
+ 
+ }
+ .topHeader button{
+   color: #efefefff;
+   font-size: 2em;
+   background-color: transparent;
+   border: none;
+   margin: 0;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ .hBsleft{
+  margin: 0 11.83em;
+ }
+ .hBleft img{
+   width: 17em;
+   margin: 1em 0 0 0;
+ }
+ .hBright {
+   margin: 0;
+ }
+ .hBright a{
+   margin-left: 1em;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ 
+ /*---- BOTTOM HEADER---------*/
+
+ .bottomHeader{
+   margin:0 0 0 23em ;
+   padding: 9em 0 0 0em;
+   /*background-color: #80002068 */
+ } 
+ .hTitle {
+   color: white;
+   font-size: 5em;
+ }
+ .word1{
+   width: 200px;
+   margin: 0 0 -60px 0;
+ }
+ .word2{
+   width: 600px;
+   margin:.5em 0 0 1em;
+ }
+ .h2Title {
+   font-weight: 100;
+   color: #efefefff;
+   font-size: 4em;
+   margin: -1.7em 0 0 6em;
+  
+ }
+ .sBblock button{
+  font-size: 13px;
+   color: rgb(0,0,0);
+   padding: 1.2em;
+   margin: 5em 0 0 35em;
+ }
+ .sBblock button:hover{
+   color: #efefefff;
+   background-color:#800020;
+   border: none;
+ }
+/*------- Intro Block ---------*/
+.introBlock{
+  display: flex;
+  margin:8em 3em;
+}
+.introBlockCenter{
+ margin:10em 3em;
+}
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+.oTblock p{
+  width: 26em;
+  font-size: 1.2em;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 2em  0;
+}
+.hands{
+  width: 20em;
+  height: 13em;
+  margin-top:18em ;
+  
+}
+.cup{
+  width: 25em;
+
+}
+}
+@media(max-width:1200px){
+ /*---- TOP HEADER---------*/
+.topHeader{
+  position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   margin: -160px 0 0 0 ;
+ 
+ }
+ .topHeader button{
+   color: #efefefff;
+   font-size: 1.7em;
+   background-color: transparent;
+   border: none;
+   margin: 0;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ .hBsleft{
+  margin: 0 6.9em;
+ }
+ .hBleft img{
+   width: 8em;
+   margin: 1em 0 0 0;
+ }
+ .hBright {
+   margin: 0;
+ }
+ .hBright a{
+   margin-left: 1em;
+   text-shadow: 1px 1px 3px #000000;
+   font-size: .7em;
+ }
+ /*---- BOTTOM HEADER---------*/
+ .bottomHeader{
+   margin:0 0 0 23em ;
+   padding: 0em 0 0 0em;
+   /*background-color: #80002068 */
+ } 
+ .hTitle {
+   color: white;
+   font-size: 5em;
+   margin: 2em 0 0 -2em;
+ }
+ .word1{
+   width: 200px;
+   margin: 0 0 -50px 0;
+ }
+ .word2{
+   width: 600px;
+   margin:.5em 0 0 1em;
+ }
+ .h2Title {
+   font-weight: 100;
+   color: #efefefff;
+   font-size: 4em;
+   margin: -.7em 0 0 3em;
+  
+ }
+ .sBblock button{
+  font-size: 13px;
+   color: rgb(0,0,0);
+   padding: 1.2em;
+   margin: 6em 0 0 10em;
+ }
+ .sBblock button:hover{
+   color: #efefefff;
+   background-color:#800020;
+   border: none;
+ }
+/*------- Intro Block ---------*/
+.introBlock{
+  display: flex;
+  margin:-10em 2em 4em 2em;
+}
+.introBlockCenter{
+ margin:10em 3em;
+}
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 1.9em;
+  margin-bottom: 2em;
+}
+.oTblock p{
+  width: 18em;
+  font-size: 1.1em;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 2em  0;
+}
+.hands{
+  width: 30em;
+  height: 12em;
+  margin:25em 0 0 -7em;
+}
+.cup{
+  width: 23em;
+}
+}
+@media(max-width:850px){
+  /*---- TOP HEADER---------*/
+.topHeader{
+  position: fixed;
+   display: flex;
+   justify-content: space-between;
+   align-items:center;
+   margin: -160px 0 0 0 ;
+ 
+ }
+ .topHeader button{
+   color: #efefefff;
+   font-size: 1.5em;
+   background-color: transparent;
+   border: none;
+   margin: 0;
+   text-shadow: 1px 1px 3px #000000;
+ }
+ .hBsleft{
+  margin: 0 .4em 0 .4em;
+ }
+ .hBleft img{
+   width: 8em;
+   margin: 1em 2em 0 -2em;
+ }
+ .hBright {
+   margin: 0;
+ }
+ .hBright a{
+   margin-left: 1em;
+   text-shadow: 1px 1px 3px #000000;
+   font-size: .7em;
+ }
+ /*---- BOTTOM HEADER---------*/
+ .bottomHeader{
+   margin:0 0 0 13em ;
+   padding: 0em 0 0 0em;
+   /*background-color: #80002068 */
+ } 
+ .hTitle {
+   color: white;
+   font-size: 5em;
+   margin: 2em 0 0 -2em;
+ }
+ .word1{
+   width: 200px;
+   margin: 0 0 -50px 0;
+ }
+ .word2{
+   width: 600px;
+   margin:.5em 0 0 .2em;
+ }
+ .h2Title {
+   font-weight: 100;
+   color: #efefefff;
+   font-size: 4em;
+   margin: -.7em 0 0 1.6em;
+  
+ }
+ .sBblock button{
+  font-size: 13px;
+   color: rgb(0,0,0);
+   padding: 1.2em;
+   margin: 6em 0 0 10em;
+ }
+ .sBblock button:hover{
+   color: #efefefff;
+   background-color:#800020;
+   border: none;
+ }
+/*------- Intro Block ---------*/
+.introBlock{
+  display: flex;
+  margin:-10em 2em 4em 2em;
+}
+.introBlockCenter{
+ margin:6em 3em;
+}
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 1.9em;
+  margin-bottom: 2em;
+}
+.oTblock p{
+  width: 18em;
+  font-size: 1.1em;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 2em  0;
+}
+.hands{
+  width: 18em;
+  height: 14em;
+  margin:25em 0 0 -20em;
+}
+.cup{
+  width: 20em;
+}
+}
+/* ----------  Phone ------------*/
+@media(max-width:690px){
+
+}
+@media(max-width:425px){
+  
+}
