@@ -137,15 +137,47 @@ body{
    background: rgb(239,239,239);
 background: linear-gradient(0deg, rgba(239,239,239,1) 0%, rgba(201,169,166,1) 50%, rgba(239,239,239,1) 100%);
  }
- 
- .lilypad{
-   width: 200px;
- }
- .chair{
-   width: 200px;
- }
- 
- 
+
+.collectionBlock{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 3em 40em;
+}
+.tContainer{
+  margin:200px 35em 0 0em;
+}
+.tContainer h3{
+  font-size: 25px;
+}
+.tContainer h1{
+  font-size: 50px;
+}
+.tContainer p{
+  position: absolute;
+  font-size: 40px;
+  width: 700px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.tLcontainer p{
+  font-size: 25px;
+  width: 600px;
+  margin:1em 0;
+}
+
+.chair{
+  width: 500px;
+}
+.lilypad{
+  width: 300px;
+  margin: 23em 0 0 11em;
+}
+.white{
+  width: 350px;
+  height: 400px;
+  margin: 0 0 0 -500px;
+}
 
 
 
@@ -303,20 +335,6 @@ collectionSection{
   margin:1em 0;
 }
 
-
-/*
-
-.tContainer p{
-  font-size: 25px;
-  width: 800px;
-}
-.tLcontainer{
-  margin:0em;
-}
-
-
-
-*/
 .chair{
   width: 500px;
 }
@@ -330,10 +348,12 @@ collectionSection{
   margin: 0 0 0 -500px;
 }
 }
-
-
-
 @media(max-width:1600px){ 
+
+
+
+
+
 }
 @media(max-width:1440px){
 /*---- TOP HEADER---------*/
@@ -438,6 +458,48 @@ collectionSection{
   width: 25em;
 
 }
+/*------- Collection Block ---------*/
+
+.collectionBlock{
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding: 3em 0em 0 -.1em;
+}
+.tContainer{
+  margin:200px 0em 0 0em;
+}
+.tContainer h3{
+  font-size: 25px;
+}
+.tContainer h1{
+  font-size: 50px;
+}
+.tContainer p{
+  position: absolute;
+  font-size: 30px;
+  width: 500px;
+}
+
+.tLcontainer p{
+  font-size: 20px;
+  width: 500px;
+  margin:1em 0;
+}
+
+.chair{
+  width: 400px;
+  margin-top: 150px;
+}
+.lilypad{
+  width: 250px;
+  margin: 18.3em 0 0 0em;
+}
+.white{
+  width: 300px;
+  height: 400px;
+  margin: 0;
+}
 }
 @media(max-width:1200px){
  /*---- TOP HEADER---------*/
@@ -540,6 +602,48 @@ collectionSection{
 .cup{
   width: 23em;
 }
+/*------- Collection Block ---------*/
+
+.collectionBlock{
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding: 3em ;
+}
+.tContainer{
+  margin:150px 0em 0 3em;
+}
+.tContainer h3{
+  font-size: 20px;
+}
+.tContainer h1{
+  font-size: 35px;
+}
+.tContainer p{
+  position: absolute;
+  font-size: 25px;
+  width: 400px;
+}
+
+.tLcontainer p{
+  font-size: 18px;
+  width: 350px;
+  margin:1em 0;
+}
+
+.chair{
+  width: 300px;
+  margin-top: 80px;
+}
+.lilypad{
+  width: 200px;
+  margin: 15.7em 0 0 0em;
+}
+.white{
+  width: 220px;
+  height: 300px;
+  padding: 0 1px;
+}
 }
 @media(max-width:850px){
   /*---- TOP HEADER---------*/
@@ -641,6 +745,48 @@ collectionSection{
 }
 .cup{
   width: 20em;
+}
+/*------- Collection Block ---------*/
+
+.collectionBlock{
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding: 3em ;
+}
+.tContainer{
+  margin:80px 0em 0 0em;
+}
+.tContainer h3{
+  font-size: 20px;
+}
+.tContainer h1{
+  font-size: 35px;
+}
+.tContainer p{
+  position: absolute;
+  font-size: 20px;
+  width: 350px;
+}
+
+.tLcontainer p{
+  font-size: 18px;
+  width: 350px;
+  margin:1em 0;
+}
+
+.chair{
+  width: 250px;
+  margin-top: 80px;
+}
+.lilypad{
+  width: 150px;
+  margin: 12.4em 0 0 0em;
+}
+.white{
+  width: 180px;
+  height: 200px;
+  padding: 0 1px;
 }
 }
 /* ----------  Phone ------------*/
