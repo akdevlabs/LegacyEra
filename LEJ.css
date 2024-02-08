@@ -508,7 +508,7 @@ collectionSection{
    display: flex;
    justify-content: space-between;
    align-items:center;
-   padding: 0 75px;
+   padding: 0 78px;
    margin: -160px 0 0 0 ;
  
  }
@@ -575,7 +575,7 @@ collectionSection{
 /*------- Intro Block ---------*/
 .introBlock{
   display: flex;
-  margin:-10em 2em 4em 2em;
+  margin:-3em 2em 4em 2em;
 }
 .introBlockCenter{
  margin:10em 3em;
@@ -597,7 +597,7 @@ collectionSection{
 }
 .hands{
   width: 30em;
-  height: 12em;
+  height: 18em;
   margin:25em 0 0 -7em;
 }
 .cup{
