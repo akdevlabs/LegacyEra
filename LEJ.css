@@ -1028,7 +1028,7 @@ collectionSection{
 
 
 
-@media(max-width:850px){
+@media(max-width:1024px){
   /*---- TOP HEADER---------*/
 .topHeader{
   position: fixed;
@@ -1064,7 +1064,7 @@ collectionSection{
  /*---- BOTTOM HEADER---------*/
  .bottomHeader{
    margin:0 0 0 13em ;
-   padding: 0em 0  10em 0;
+   padding: 0em 0  30em 0;
    /*background-color: #80002068 */
  } 
  .hTitle {
