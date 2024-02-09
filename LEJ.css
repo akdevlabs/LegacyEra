@@ -991,7 +991,7 @@ collectionSection{
   }
   .carousel-gallery{
     display: flex;
-    gap: 3px;
+    gap: 10px;
   
   }
   ul {
