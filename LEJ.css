@@ -870,7 +870,7 @@ collectionSection{
    margin: 0;
  }
  .hBright a{
-   margin-left: 1em;
+   margin-left: .5em;
    
    text-shadow: 1px 1px 3px #000000;
    font-size: .7em;
@@ -898,7 +898,7 @@ collectionSection{
    font-weight: 100;
    color: #efefefff;
    font-size: 4em;
-   margin: -.7em 0 0 2em;
+   margin: -.7em 0 0 3em;
   
  }
  .sBblock button{
