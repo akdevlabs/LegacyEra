@@ -1101,7 +1101,7 @@ collectionSection{
 /*------- Intro Block ---------*/
 .introBlock{
   display: flex;
-  margin:-10em 2em 4em 2em;
+  margin:0 2em 4em 2em;
 }
 .introBlockCenter{
  margin:6em 3em;
