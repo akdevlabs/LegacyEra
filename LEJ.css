@@ -722,8 +722,8 @@ collectionSection{
    margin: 0;
  }
  .hBright a{
-   margin-left: 1em;
-   padding: 0  35px 0 0;
+   margin-left: .5em;
+   padding: 0  5px 0 0;
    text-shadow: 1px 1px 3px #000000;
  }
  
