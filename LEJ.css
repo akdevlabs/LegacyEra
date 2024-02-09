@@ -857,7 +857,7 @@ collectionSection{
    font-size: 1.5em;
    background-color: transparent;
    border: none;
-   margin: 0;
+   margin: 0 .5em;
    text-shadow: 1px 1px 3px #000000;
  }
  .hBsleft{
