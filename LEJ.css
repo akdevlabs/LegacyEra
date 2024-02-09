@@ -468,7 +468,7 @@ collectionSection{
      justify-content: space-between;
      align-items:center;
      margin: -10px 0 0 0 ;
-   
+     padding: 0 auto;
    }
    .topHeader button{
      color: #efefefff;
@@ -701,6 +701,7 @@ collectionSection{
    justify-content: space-between;
    align-items:center;
    margin: -10px 0 0 0 ;
+   padding: 0 auto;
  
  }
  .topHeader button{
