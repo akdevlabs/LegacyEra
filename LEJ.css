@@ -986,8 +986,8 @@ collectionSection{
 .vrmedia-gallery{
   display: flex;
   align-items: center;
-  gap: 1em;
-  margin:0 1em; 
+  gap: 3em;
+  margin:0 2em; 
   }
   .carousel-gallery{
     display: flex;
