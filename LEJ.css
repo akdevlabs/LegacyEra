@@ -986,16 +986,22 @@ collectionSection{
 .vrmedia-gallery{
   display: flex;
   align-items: center;
-  gap: .5em;
+  gap: 1em;
   margin:0 1em; 
   }
   .carousel-gallery{
     display: flex;
-    gap: 10px;
+    gap: 3px;
   
   }
   ul {
     list-style-type: none;
+  }
+  .carousel-gallery a span{
+    display: flex;
+    justify-content: left;
+    font-size: 17px;
+
   }
   .cImg{
     width: 300px;
