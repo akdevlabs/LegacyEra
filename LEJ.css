@@ -1294,6 +1294,41 @@ collectionSection{
 .wRbottom img{
   width: 300px;
 }
+/*------- Footer Block ---------*/ 
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 7em 5em -20em 5em;
+}
+.fSocialBlock{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
+}
+.sBtext h1{
+  font-size: 2em;
+}
+.sBtext h2{
+  font-size: 1.5em;
+}
+.sBlinks a{
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.tags a{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
 }
 
 
