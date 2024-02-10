@@ -26,7 +26,7 @@ body{
    font-size: 2.8em;
    background-color: transparent;
    border: none;
-   margin: 0 1.25em;
+   margin: 0 1.29em;
    text-shadow: 1px 1px 3px #000000;
  }
  .hBleft img{
@@ -34,7 +34,7 @@ body{
    margin: 1em 10em 0 13em;
  }
  .hBright {
-   margin: 0 10em 0 28em ;
+   margin: 0 10em 0 27.3em ;
  }
  .hBright a{
    margin-left: 2em;
@@ -132,6 +132,7 @@ body{
 /*------- Collection Block ---------*/ 
 .collectionBlock{
    display: flex;
+   justify-content: center;
    flex-direction: row-reverse;
    background: rgb(239,239,239);
 background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
@@ -191,7 +192,6 @@ background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,
 .carousel-gallery{
   display: flex;
   gap: 10px;
- 
 }
 ul {
   list-style-type: none;
@@ -200,7 +200,6 @@ ul {
   display: flex;
   justify-content: left;
   font-size: 17px;
-
 }
 .cImg{
   width: 500px;
@@ -240,11 +239,6 @@ ul {
 .arrows{
   width: 20px;
 }
-
-
-
-
-
 
 /*------- Build It Block ---------*/ 
 .buildItblock{
@@ -300,9 +294,117 @@ ul {
   background: #000000;
 }
 
-/*------- Build It Block ---------*/ 
+/*------- Weding Block ---------*/ 
+.weddingBlock{
+  background: rgb(239,239,239);
+  background: linear-gradient(0deg, #efefef 0%, #c9a9a6 20%, #c9a9a6 90%, #efefef 100%); 
+}
+.weddingCollection{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2em; 
+}
+.wBleft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wBlImg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wBlImg h2{
+  font-size: 1.6em;
+  letter-spacing: 0.3em;
+  margin: 1em 0;
+  font-weight: 100;
+}
+.wBlText button{
+  margin: 1em 0;
+  font-size: 25px;
+  font-weight: 600;
+  color: #800020;
+  border: none;
+  background-color: transparent;
+
+}
+.slanted-line {
+  width: 1300px; /* Adjust as needed */
+  height: 2px; /* Adjust thickness as needed */position: absolute;
+  margin: -400px;
+  background-color: black; /* Adjust color as needed */
+  transform: rotate(-45deg); /* Adjust angle as needed */
+}
+.box{
+  width: 250px; 
+}
+.wed{
+  width: 600px;
+}
+/*------- Wholesale Block ---------*/ 
+
+.wholesale{
+  background-image: url("Images/brownring.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin: 10em 0;
+}
+.wSblock{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 
+.wLeft{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 10em;
+  
+}
+.wLeft h4{
+  color: #efefef;
+  font-size: 1.5em;
+  margin: 0em 0 0 -15em;
+}
+.wLeft h1{
+  color: #efefef;
+  font-size: 4.5em;
+  margin: 2em 0 -2em 0;
+}
+
+.wLeft span{
+  font-weight: 600;
+  color: #800020;
+}
+.wLeft button{
+  color:#efefef;
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+}
+
+.wRtop{
+  display: flex;
+  gap: 3em;
+}
+.wRight{
+  display: flex;
+  flex-direction: column;
+  gap: 34em;
+  justify-content: space-evenly;
+}
+.wRtop img{
+  width: 200px;
+}
+.wRbottom img{
+  width: 400px;
+}
 
 
 
@@ -314,7 +416,7 @@ ul {
   justify-content: space-between;
   align-items:center;
   margin: -80px 0 0 0 ;
-  padding: 0 3.76em;
+  padding: 0 1.35em;
 }
 .topHeader button{
   color: #efefefff;
@@ -329,7 +431,7 @@ ul {
   margin: 1em 7em 0 5em;
 }
 .hBright {
-  margin: 0 0em 0 6em ;
+  margin: 0 0em 0 10.8em ;
 }
 .hBright a{
   margin-left: 2em;
@@ -419,9 +521,10 @@ main{
   margin: 4em  0;
 }
 .hands{
-  width: 25em;
+  width: 30em;
   height: 19em;
-  margin-top:18em ;
+  margin:28em 0 0  -10em ;
+
   
 }
 .cup{
@@ -494,7 +597,7 @@ collectionSection{
      text-shadow: 1px 1px 3px #000000;
    }
    .hBsleft{
-    margin: 0 11.83em;
+    margin: 0 11em;
    }
    .hBleft img{
      width: 17em;
