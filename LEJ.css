@@ -1179,9 +1179,9 @@ collectionSection{
 
   }
   .slanted-line {
-    width: 1300px; /* Adjust as needed */
+    width: 850px; /* Adjust as needed */
     height: 2px; /* Adjust thickness as needed */position: absolute;
-    margin: -400px;
+    margin: -380px 0 0 -200px;
     background-color: black; /* Adjust color as needed */
     transform: rotate(-45deg); /* Adjust angle as needed */
   }
