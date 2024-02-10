@@ -1204,6 +1204,7 @@ collectionSection{
 .wSblock{
   display: flex;
   justify-content: space-evenly;
+ 
 }
 .wLeft{
  display: flex;
@@ -1211,17 +1212,18 @@ collectionSection{
  align-items: center;
  justify-content: center;
  gap: 10em;
+ 
   
 }
 .wLeft h4{
   color: #efefef;
   font-size: 1.5em;
-  margin: 0em 0 0 -15em;
+  margin: 2em 0 0 -3em;
 }
 .wLeft h1{
   color: #efefef;
-  font-size: 4.5em;
-  margin: 2em 0 -2em 0;
+  font-size: 3em;
+  margin: 2em 0 -3em 0;
 }
 .wLeft span{
   font-weight: 600;
@@ -1229,7 +1231,7 @@ collectionSection{
 }
 .wLeft button{
   color:#efefef;
-  font-size: 2em;
+  font-size: 1.5em;
   border: none;
   background-color: transparent;
 }
@@ -1240,14 +1242,15 @@ collectionSection{
 .wRight{
   display: flex;
   flex-direction: column;
-  gap: 34em;
+  gap: 25em;
   justify-content: space-evenly;
+  margin-top: 2em;
 }
 .wRtop img{
-  width: 200px;
+  width: 150px;
 }
 .wRbottom img{
-  width: 400px;
+  width: 300px;
 }
 }
 
