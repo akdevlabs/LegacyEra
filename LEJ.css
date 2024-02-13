@@ -802,10 +802,10 @@ ul {
     width: 8em;
  }
  .hBright {
-    margin: 0 2em ;
+    margin: 0 1em ;
  }
  .hBright a{
-    margin-left: 2em;
+    margin-left: 1.8em;
     text-shadow: .15em 1px 3px #000000;
  }
 /*---- BOTTOM HEADER---------*/
