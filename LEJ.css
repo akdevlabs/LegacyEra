@@ -778,7 +778,7 @@ ul {
 }
 
 }
-@media(max-width:1380px){ 
+@media(max-width:1418px){ 
  .hBright a{
     font-size: .7em;
  }
@@ -791,7 +791,7 @@ ul {
     padding: 1em;
  }
  .topHeader button{
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0 .5em;
 
  }
@@ -799,13 +799,13 @@ ul {
    margin: 0 1em ;
  }
  .hBleft img{
-    width: 8em;
+    width: 12em;
  }
  .hBright {
     margin: 0 1em ;
  }
  .hBright a{
-    margin-left: 1.8em;
+    margin-left: 2em;
     text-shadow: .15em 1px 3px #000000;
  }
 /*---- BOTTOM HEADER---------*/
