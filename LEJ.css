@@ -831,8 +831,7 @@ ul {
 /*------- Intro Block ---------*/
  .introBlock{
     margin:2em;
- }
-  
+ } 
 .introBlockCenter{
  width: 100%;
 }
@@ -840,7 +839,6 @@ ul {
   width: 18em;
 
 }
-
 .oTblock h1{
   color:#C9A9A6;
   font-size: 2.5em;
@@ -859,9 +857,7 @@ ul {
 .hands{
   display: none;
 }
-.cup{
-  width: 26em;
-}
+
 
  /*------- Intro Block ---------*/
  .introBlock{
@@ -890,94 +886,92 @@ ul {
   font-size: 1.5em;
   margin: 4em  0;
 }
-.hands{
-  width: 25em;
-  height: 19em;
-  margin-top:18em ;
-  
-}
+
 .cup{
   width: 35em;
 
 }
+/*------- Collection Block ---------*/ 
+.collectionSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.collectionBlock{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:5em 0;
+  background: rgb(239,239,239);
+  background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
+}
+.tLcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chair{
+  width: 22em;
+}
+.tLcontainer p{
+  text-align: justify;
+  font-size: 1.3em;
+  margin: 1em 0;
+  width:30em;
+}
+.rb{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.tCcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10em 0 0 -30em;
+}
+.tCtop{
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+  
+}
 
 
 
+.tCcontainer h3{
+  font-size: 2em;
+}
+.tCcontainer h1{
+  color: #800020;
+  font-size: 3em;
+}
+.tCcontainer p{
+  font-size: 2em;
+  font-size: 1.8em;
+  text-align: justify;
+  width: 20em;
+  margin:1em 0;
+
+}
 
 
-  /*------- Collection Block ---------*/ 
-  .collectionSection{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .collectionBlock{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin:5em 0;
-    background: rgb(239,239,239);
-    background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
-  }
-  .tLcontainer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .chair{
-    width: 20em;
-  }
-  .tLcontainer p{
-    text-align: justify;
-    font-size: 1.3em;
-    margin: 1em 0;
-    width:40em;
-  }
-  .rb{
-    display: flex;
-    align-items: center;
-    gap: 2em;
-  }
-  .tCcontainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: -10em 0 0 -35em;
-  }
-  .tCtop{
-    display: flex;
-    align-items: flex-end;
-    gap: 2em; 
-  }
-  .tCcontainer h3{
-    font-size: 2em;
-  }
-  .tCcontainer h1{
-    color: #800020;
-    font-size: 3em;
-  }
-  .tCcontainer p{
-    font-size: 2em;
-    font-size: 2.5em;
-    text-align: justify;
-    width: 20em;
-    margin:1em 0;
-  }
-  .tRcontainer{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: -5em 0 0 -10em ;
-  }
-  .lilypad{
-    width: 10em;
-  }
-  .white{
-    width: 17em;
-    height: 24em;
-  }
-  /*------- Carousel Block ---------*/ 
+.tRcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: -5em 0 0 -10em ;
+}
+.lilypad{
+  width: 15em;
+}
+.white{
+  display: none;
+}
+
+/*------- Carousel Block ---------*/ 
   .carousel{
     display: flex;
     align-items: center;
@@ -1002,7 +996,7 @@ ul {
     font-size: 2em;
   }
   .cImg{
-    width: 25em;
+    width: 20em;
   }
   .collectionBtn{
     display: flex;
@@ -1040,4 +1034,36 @@ ul {
     width: 20px;
   }
   
-  }
+}
+@media(max-width:1280px){
+/*---- TOP HEADER---------*/
+.topHeader{
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items:center;
+  padding: .5em;
+}
+.topHeader button{
+  color: #efefefff;
+  font-size: 2.3em;
+  background-color: transparent;
+  border: none;
+  margin: 0 1em;
+  text-shadow: 1px 1px 3px #000000;
+}
+.hBleft {
+ margin: 0 3em ;
+}
+.hBleft img{
+  width: 10em;
+}
+.hBright {
+  margin: 0 1em ;
+}
+.hBright a{
+  margin-left: .5em;
+  text-shadow: .15em 1px 3px #000000;
+}
+}
