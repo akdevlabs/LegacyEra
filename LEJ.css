@@ -1,46 +1,48 @@
 *{
-  margin: 0;
-
+  margin:0;
+  padding:0;
   font-family: 'Cormorant', serif;
   
 }
 body{
+  width: 100%;
   background-color: #efefefff;
 }
 /*---- HEADER---------*/
 #navbar {
-  background-color: transparent; /* Initial background color */
-  transition: background-color 0.3s ease; /* Smooth transition effect */
-  /* Other styles for your navbar */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 /*---- TOP HEADER---------*/
 .topHeader{
-  position: fixed;
+   position:fixed;
    display: flex;
    justify-content: space-between;
+   width: 100%;
    align-items:center;
-   margin: -80px 0 0 0 ; 
- }
- .topHeader button{
+   padding: 1em;
+}
+.topHeader button{
    color: #efefefff;
    font-size: 2.8em;
    background-color: transparent;
    border: none;
-   margin: 0 1.29em;
+   margin: 0 2em;
    text-shadow: 1px 1px 3px #000000;
- }
- .hBleft img{
+}
+.hBleft {
+  margin: 0 3em ;
+}
+.hBleft img{
    width: 20em;
-   margin: 1em 10em 0 13em;
- }
- .hBright {
-   margin: 0 10em 0 27.3em ;
- }
- .hBright a{
-   margin-left: 2em;
-   padding: 0 0 0 2px;
-   text-shadow: 1px 1px 3px #000000;
- }
+}
+.hBright {
+   margin: 0 3em ;
+}
+.hBright a{
+   margin-left: 3em;
+   text-shadow: .15em 1px 3px #000000;
+}
  /*---- CENTER HEADER---------*/
  .video-container {
    position:absolute;
@@ -58,34 +60,38 @@ body{
  }
  /*---- BOTTOM HEADER---------*/
  .bottomHeader{
-   margin:5em 0 0 30em ;
-   padding: 4em 0 0 25em;
-   /*background-color: #80002068 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
  }
- .word1{
-   width: 280px;
-   margin: 0 0 -60px 0;
- }
- .word2{
-   width: 800px;
-   margin:0 0 0 1em;
+ .hTblock{
+   margin: 9em;
  }
  .hTitle {
    color: white;
-   font-size: 10em;
+   font-size: 7em;
+ }
+ .word1{
+   width: 2em;
+   margin-bottom:-.42em;
+ }
+ .word2{
+   width:6.5em;
+   margin-left:1em;
  }
  .h2Title {
    font-weight: 100;
    color: #efefefff;
    font-size: 4em;
-   margin: -2.5em 0 0 9em;
+   margin: -2em 0 0 9em;
   
  }
  .sBblock button{
-  font-size: 17px;
+   font-size: 1.2em;
    color: rgb(0,0,0);
    padding: 1.2em;
-   margin: 8em 0 0 30em;
+   margin: 5em 0 0 30em;
  }
  .sBblock button:hover{
    color: #efefefff;
@@ -99,10 +105,13 @@ body{
  /*------- Intro Block ---------*/
  .introBlock{
    display: flex;
-   margin:8em 23em;
+   justify-content: center;
+   align-items: center;
+   margin:8em;
  }
  .introBlockCenter{
-  margin:10em 3em;
+  width: 100%;
+  margin:10em 8em ;
  }
  .oTblock h1{
    color:#C9A9A6;
@@ -110,8 +119,9 @@ body{
    margin-bottom: 2em;
  }
  .oTblock p{
-   width: 26em;
+   
    font-size: 1.6em;
+   text-align: justify;
  }
  .lMbtn {
    color: #800020;
@@ -130,51 +140,91 @@ body{
  
  }
 /*------- Collection Block ---------*/ 
-.collectionBlock{
-   display: flex;
-   justify-content: center;
-   flex-direction: row-reverse;
-   background: rgb(239,239,239);
-background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
-}
-.collectionBlock{
+.collectionSection{
   display: flex;
-  flex-direction: row-reverse;
-  padding: 3em 40em;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.tContainer{
-  margin:200px 35em 0 0em;
+.collectionBlock{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:5em 0;
+  background: rgb(239,239,239);
+  background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
 }
-.tContainer h3{
-  font-size: 25px;
-}
-.tContainer h1{
-  font-size: 50px;
-}
-.tContainer p{
-  position: absolute;
-  font-size: 40px;
-  width: 700px;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-.tLcontainer p{
-  font-size: 25px;
-  width: 600px;
-  margin:1em 0;
+.tLcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .chair{
-  width: 500px;
+  width: 30em;
+}
+.tLcontainer p{
+  text-align: justify;
+  font-size: 1.3em;
+  margin: 1em 0;
+  width:40em;
+}
+.rb{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.tCcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10em 0 0 -30em;
+}
+.tCtop{
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+  
+}
+
+
+
+.tCcontainer h3{
+  font-size: 2em;
+}
+.tCcontainer h1{
+  color: #800020;
+  font-size: 3em;
+}
+.tCcontainer p{
+  font-size: 2em;
+  font-size: 2.5em;
+  text-align: justify;
+  width: 20em;
+  margin:1em 0;
+
+}
+
+
+.tRcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: -5em 0 0 -10em ;
 }
 .lilypad{
-  width: 300px;
-  margin: 23em 0 0 11em;
+  width: 15em;
 }
 .white{
-  width: 350px;
-  height: 400px;
-  margin: 0 0 0 -500px;
+  width: 17em;
+  height: 24em;
 }
+
+
+
+
+
+
 
 
 /*------- Carousel Block ---------*/ 
@@ -202,7 +252,7 @@ ul {
   font-size: 17px;
 }
 .cImg{
-  width: 500px;
+  width: 30em;
 }
 .collectionBtn{
   display: flex;
@@ -450,1040 +500,278 @@ a:active {
 }
 /*------- PopUp Block ---------*/ 
 
-@media(max-width:2000px){
+@media(max-width:1966px){
 /*---- TOP HEADER---------*/
-.topHeader{
- position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  margin: -80px 0 0 0 ;
-  padding: 0 1.35em;
-}
-.topHeader button{
-  color: #efefefff;
-  font-size: 2.4em;
-  background-color: transparent;
-  border: none;
-  margin: 0 1.76em;
-  text-shadow: 1px 1px 3px #000000;
-}
-.hBleft img{
-  width: 17em;
-  margin: 1em 7em 0 5em;
-}
-.hBright {
-  margin: 0 0em 0 10.8em ;
-}
-.hBright a{
-  margin-left: 2em;
-  
-  text-shadow: 1px 1px 3px #000000;
-}
-/*---- CENTER HEADER---------*/
-.video-container {
-  position:absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: -1; /* Ensure video is behind other content */
-}
-#video-background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /
-}
-/*---- BOTTOM HEADER---------*/
-.bottomHeader{
-  margin:5em 10em ;
-  padding: 7em 0 0 25em;
-  /*background-color: #80002068 */
-}
-.word1{
-  width: 200px;
-  margin: 0 0 -50px 0;
-}
-.word2{
-  width: 700px;
-  margin:.5em 0 0 1em;
-}
-.hTitle {
-  color: white;
-  font-size: 4em;
-}
-.h2Title {
-  font-weight: 100;
-  color: #efefefff;
-  font-size: 3.5em;
-  margin: -1em 0 0 7em;
- 
-}
-.sBblock button{
-  color: rgb(0,0,0);
-  padding: 1.2em;
-  margin: 8em 0 0 25em;
-}
-.sBblock button:hover{
-  color: #efefefff;
-  background-color:#800020;
-  border: none;
-}
-
-
-
-
-
-main{
-  margin: 400px 0;
-}
-
+ .topHeader button{
+    font-size: 2em;
+    margin: 0 .8em;
+ }
+ .hBleft img{
+  width: 18em;
+ }
 /*------- Intro Block ---------*/
 .introBlock{
-  display: flex;
-  margin:8em 5em;
-}
-.introBlockCenter{
- margin:10em 3em;
-}
-.oTblock h1{
-  color:#C9A9A6;
-  font-size: 2.5em;
-  margin-bottom: 2em;
-}
-.oTblock p{
-  width: 26em;
-  font-size: 1.6em;
-}
-.lMbtn {
-  color: #800020;
-  font-weight: 600;
-  font-size: 1.5em;
-  margin: 4em  0;
+  margin:6em;
 }
 .hands{
-  width: 30em;
-  height: 19em;
-  margin:28em 0 0  -10em ;
-
-  
+  width: 20em;
+  height: 16em;
+  margin-top:18em ;
 }
 .cup{
-  width: 35em;
+  width: 30em;
 }
-/*------- Collection Block ---------*/
-collectionSection{
-  background-color: #C9A9A6;
+/*------- Collection Block ---------*/ 
+.collectionSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .collectionBlock{
+  width: 100%;
   display: flex;
-  flex-direction: row-reverse;
- 
-  padding: 3em 16em;
+  justify-content: center;
+  margin:5em 0;
+  background: rgb(239,239,239);
+  background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
 }
-.tContainer{
-  margin:200px 35em 0 0em;
+.tLcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.tContainer h3{
-  font-size: 25px;
-}
-.tContainer h1{
-  font-size: 50px;
-}
-.tContainer p{
-  position: absolute;
-  font-size: 40px;
-  width: 700px;
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-.tLcontainer p{
-  font-size: 25px;
-  width: 600px;
-  margin:1em 0;
-}
-
 .chair{
-  width: 500px;
+  width: 30em;
+}
+.tLcontainer p{
+  text-align: justify;
+  font-size: 1.3em;
+  margin: 1em 0;
+  width:40em;
+}
+.rb{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.tCcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10em 0 0 -30em;
+}
+.tCtop{
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+  
+}
+
+
+
+.tCcontainer h3{
+  font-size: 2em;
+}
+.tCcontainer h1{
+  color: #800020;
+  font-size: 3em;
+}
+.tCcontainer p{
+  font-size: 2em;
+  font-size: 2.5em;
+  text-align: justify;
+  width: 20em;
+  margin:1em 0;
+
+}
+
+
+.tRcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: -5em 0 0 -10em ;
 }
 .lilypad{
-  width: 300px;
-  margin: 23em 0 0 11em;
+  width: 15em;
 }
 .white{
-  width: 350px;
-  height: 400px;
-  margin: 0 0 0 -500px;
+  width: 17em;
+  height: 24em;
 }
+
+
+
+
+
+
 }
-@media(max-width:1728px){ 
+
+
+
+@media(max-width:1510px){
+.topHeader button{
+  font-size: 2em;
+  margin: 0 1em;
 }
-@media(max-width:1512px){
-  /*---- TOP HEADER---------*/
-  .topHeader{
-    position: fixed;
-     display: flex;
-     justify-content: space-between;
-     align-items:center;
-     margin: -10px 0 0 0 ;
-     padding: 0 auto;
-   }
-   .topHeader button{
-     color: #efefefff;
-     font-size: 2em;
-     background-color: transparent;
-     border: none;
-     margin: 0;
-     text-shadow: 1px 1px 3px #000000;
-   }
-   .hBsleft{
-    margin: 0 11em;
-   }
-   .hBleft img{
-     width: 17em;
-     margin: 1em 0 0 0;
-   }
-   .hBright {
-     margin: 0;
-   }
-   .hBright a{
-     margin-left: 1em;
-     padding: 0  25px 0 0;
-     text-shadow: 1px 1px 3px #000000;
-   }
-/*---- BOTTOM HEADER---------*/  
-   .bottomHeader{
-     margin:0 0 0 23em ;
-     padding: 9em 0 0 0em;
-     /*background-color: #80002068 */
-   } 
-   .hTitle {
-     color: white;
-     font-size: 5em;
-   }
-   .word1{
-     width: 200px;
-     margin: 0 0 -60px 0;
-   }
-   .word2{
-     width: 600px;
-     margin:.5em 0 0 1em;
-   }
-   .h2Title {
-     font-weight: 100;
-     color: #efefefff;
-     font-size: 4em;
-     margin: -1.7em 0 0 6em;
-    
-   }
-   .sBblock button{
-    font-size: 13px;
-     color: rgb(0,0,0);
-     padding: 1.2em;
-     margin: 5em 0 0 35em;
-   }
-   .sBblock button:hover{
-     color: #efefefff;
-     background-color:#800020;
-     border: none;
-   }
+ .hBright a{
+  font-size: 1em;
+}
 /*------- Intro Block ---------*/
-  .introBlock{
-    display: flex;
-    margin:8em 3em;
-  }
-  .introBlockCenter{
-   margin:10em 3em;
-  }
-  .oTblock h1{
-    color:#C9A9A6;
-    font-size: 2.5em;
-    margin-bottom: 2em;
-  }
-  .oTblock p{
-    width: 26em;
-    font-size: 1.2em;
-  }
-  .lMbtn {
-    color: #800020;
-    font-weight: 600;
-    font-size: 1em;
-    margin: 2em  0;
-  }
-  .hands{
-    width: 20em;
-    height: 13em;
-    margin-top:18em ;
-    
-  }
-  .cup{
-    width: 25em;
+.introBlock{
+  margin:2em;
+}
+.hands{
+  width: 20em;
+  height: 14em;
+  margin-top:18em ;
+}
+.cup{
+  width: 28em;
+}
+/*------- Collection Block ---------*/ 
+.collectionSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.collectionBlock{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:5em 0;
+  background: rgb(239,239,239);
+  background: linear-gradient(0deg, rgba(239,239,239,1) 0%, #c9a9a6 50%, rgba(239,239,239,1) 100%);
+}
+.tLcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.chair{
+  width: 30em;
+}
+.tLcontainer p{
+  text-align: justify;
+  font-size: 1.3em;
+  margin: 1em 0;
+  width:40em;
+}
+.rb{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.tCcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10em 0 0 -35em;
+}
+.tCtop{
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
   
-  }
-/*------- Collection Block ---------*/
-  
-  .collectionBlock{
-    display: flex;
-    flex-direction: row-reverse;
-  
-    padding: 3em 0em 0 -.1em;
-  }
-  .tContainer{
-    margin:200px 0em 0 0em;
-  }
-  .tContainer h3{
-    font-size: 25px;
-  }
-  .tContainer h1{
-    font-size: 50px;
-  }
-  .tContainer p{
-    position: absolute;
-    font-size: 30px;
-    width: 500px;
-  }
-  .tLcontainer p{
-    font-size: 20px;
-    width: 500px;
-    margin:1em 0;
-  }
-  .chair{
-    width: 400px;
-    margin-top: 150px;
-  }
-  .lilypad{
-    width: 250px;
-    margin: 18.3em 0 0 0em;
-  }
-  .white{
-    width: 300px;
-    height: 400px;
-    margin: 0;
-  }
+}
+
+
+
+.tCcontainer h3{
+  font-size: 2em;
+}
+.tCcontainer h1{
+  color: #800020;
+  font-size: 3em;
+}
+.tCcontainer p{
+  font-size: 2em;
+  font-size: 2.5em;
+  text-align: justify;
+  width: 20em;
+  margin:1em 0;
+
+}
+.tRcontainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: -5em 0 0 -10em ;
+}
+.lilypad{
+  width: 15em;
+}
+.white{
+  width: 17em;
+  height: 24em;
+}
+
+
 /*------- Carousel Block ---------*/ 
-  .vrmedia-gallery{
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.vrmedia-gallery{
   display: flex;
   align-items: center;
   gap: 1em;
   margin:0 4em; 
-  }
-  .carousel-gallery{
-    display: flex;
-    gap: 10px;
-  
-  }
-  ul {
-    list-style-type: none;
-  }
-  .cImg{
-    width: 400px;
-  }
-  .collectionBtn{
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-  }
-  .collectionBtn button{
-    color: #800020;
-    font-weight: 600;
-    font-size: 32px;
-    border: none;
-    
-  }
-  .collectionBtn .fa-solid {
-    font-size: 32px;
-  }
-/*------- Build It Block ---------*/ 
-  .buildItblock{
-    margin: 10em 0 ;
-  }
-  .bItext{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2em;
-  }
-  .bItext h1{
-    font-size:3em;
-  }
-  .bItext h3{
-    font-size:2em;
-  }
-  .bIbanner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .model{
-    width: 60em;
-  }
-  .bITags{
+}
+.carousel-gallery{
   display: flex;
-  justify-content: space-evenly;
-  margin: 3em;
-  }
-  .bITags a{
-    color: #000000a0;
-    font-size:20px ;
-  }
-  .bITags span{
-    font-size:22px ;
-  }
-  .bItBlock{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .bIlink{
-    color: #800020;
-    border: none;
-    font-size:22px ;
-    padding: 0 10px 0 0;
-  }
-  .line{
-    width:auto;
-    height: 2px;
-    margin: 0 4em;
-    background: #000000;
-  }
+  gap: 10px;
 }
-
-
-
-
-@media(max-width:1440px){
-/*---- TOP HEADER---------*/
-.topHeader{
-  position: fixed;
-   display: flex;
-   justify-content: space-between;
-   align-items:center;
-   margin: -10px 0 0 0 ;
-   padding: 0 auto;
- 
- }
- .topHeader button{
-   color: #efefefff;
-   font-size: 2em;
-   background-color: transparent;
-   border: none;
-   margin: 0;
-   text-shadow: 1px 1px 3px #000000;
- }
- .hBsleft{
-  margin: 0 11.83em;
- }
- .hBleft img{
-   width: 17em;
-   margin: 1em 0 0 0;
- }
- .hBright {
-   margin: 0;
- }
- .hBright a{
-   margin-left: .5em;
-   padding: 0  5px 0 0;
-   text-shadow: 1px 1px 3px #000000;
- }
- 
- /*---- BOTTOM HEADER---------*/
-
- .bottomHeader{
-   margin:0 0 0 23em ;
-   padding: 9em 0 0 0em;
-   /*background-color: #80002068 */
- } 
- .hTitle {
-   color: white;
-   font-size: 5em;
- }
- .word1{
-   width: 200px;
-   margin: 0 0 -60px 0;
- }
- .word2{
-   width: 600px;
-   margin:.5em 0 0 1em;
- }
- .h2Title {
-   font-weight: 100;
-   color: #efefefff;
-   font-size: 4em;
-   margin: -1.7em 0 0 6em;
-  
- }
- .sBblock button{
-  font-size: 13px;
-   color: rgb(0,0,0);
-   padding: 1.2em;
-   margin: 5em 0 0 35em;
- }
- .sBblock button:hover{
-   color: #efefefff;
-   background-color:#800020;
-   border: none;
- }
-/*------- Intro Block ---------*/
-.introBlock{
+ul {
+  list-style-type: none;
+}
+.carousel-gallery a span{
   display: flex;
-  margin:8em 3em;
-}
-.introBlockCenter{
- margin:10em 3em;
-}
-.oTblock h1{
-  color:#C9A9A6;
-  font-size: 2.5em;
-  margin-bottom: 2em;
-}
-.oTblock p{
-  width: 26em;
-  font-size: 1.2em;
-}
-.lMbtn {
-  color: #800020;
-  font-weight: 600;
-  font-size: 1em;
-  margin: 2em  0;
-}
-.hands{
-  width: 20em;
-  height: 13em;
-  margin-top:18em ;
-  
-}
-.cup{
-  width: 25em;
-
-}
-/*------- Collection Block ---------*/
-
-.collectionBlock{
-  display: flex;
-  flex-direction: row-reverse;
-
-  padding: 3em 0em 0 -.1em;
-}
-.tContainer{
-  margin:200px 0em 0 0em;
-}
-.tContainer h3{
-  font-size: 25px;
-}
-.tContainer h1{
-  font-size: 50px;
-}
-.tContainer p{
-  position: absolute;
-  font-size: 30px;
-  width: 500px;
-}
-
-.tLcontainer p{
-  font-size: 20px;
-  width: 500px;
-  margin:1em 0;
-}
-
-.chair{
-  width: 400px;
-  margin-top: 150px;
-}
-.lilypad{
-  width: 250px;
-  margin: 18.3em 0 0 0em;
-}
-.white{
-  width: 300px;
-  height: 400px;
-  margin: 0;
-}
-}
-@media(max-width:1380px){
- /*---- TOP HEADER---------*/
-.topHeader{
-  position: fixed;
-   display: flex;
-   justify-content: space-between;
-   align-items:center;
-   padding: 0 auto;
-   margin: -160px 0 0 0 ;
- 
- }
- .topHeader button{
-   color: #efefefff;
-   font-size: 1.5em;
-   background-color: transparent;
-   border: none;
-   margin: 0 .78em;
-   text-shadow: 1px 1px 3px #000000;
- }
- .hBsleft{
-  margin: 0 9.35em;
- }
- .hBleft img{
-   width: 8em;
-   margin: 1em 0 0 0;
- }
- .hBright {
-   margin: 0;
- }
- .hBright a{
-   margin-left:0;
-   text-shadow: 1px 1px 3px #000000;
-   font-size: .7em;
- }
- /*---- BOTTOM HEADER---------*/
- .bottomHeader{
-   margin:0 0 0 23em ;
-   padding: 0em 0 0 0em;
-   /*background-color: #80002068 */
- } 
- .hTitle {
-   color: white;
-   font-size: 5em;
-   margin: 2em 0 0 -2em;
- }
- .word1{
-   width: 200px;
-   margin: 0 0 -50px 0;
- }
- .word2{
-   width: 600px;
-   margin:.5em 0 0 1em;
- }
- .h2Title {
-   font-weight: 100;
-   color: #efefefff;
-   font-size: 4em;
-   margin: -.7em 0 0 3em;
-  
- }
- .sBblock button{
-  font-size: 13px;
-   color: rgb(0,0,0);
-   padding: 1.2em;
-   margin: 6em 0 0 10em;
- }
- .sBblock button:hover{
-   color: #efefefff;
-   background-color:#800020;
-   border: none;
- }
-/*------- Intro Block ---------*/
-.introBlock{
-  display: flex;
-  margin:-3em 2em 4em 2em;
-}
-.introBlockCenter{
- margin:10em 3em;
-}
-.oTblock h1{
-  color:#C9A9A6;
-  font-size: 1.9em;
-  margin-bottom: 2em;
-}
-.oTblock p{
-  width: 18em;
-  font-size: 1.1em;
-}
-.lMbtn {
-  color: #800020;
-  font-weight: 600;
-  font-size: 1em;
-  margin: 2em  0;
-}
-.hands{
-  width: 30em;
-  height: 18em;
-  margin:25em 0 0 -7em;
-}
-.cup{
-  width: 23em;
-}
-/*------- Collection Block ---------*/
-.collectionBlock{
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 8em ;
-}
-.tContainer{
-  margin:150px 0em 0 3em;
-}
-.tContainer h3{
-  font-size: 20px;
-}
-.tContainer h1{
-  font-size: 35px;
-}
-.tContainer p{
-  position: absolute;
-  font-size: 25px;
-  width: 400px;
-}
-.tLcontainer p{
-  font-size: 18px;
-  width: 350px;
-  margin:1em 0;
-}
-.chair{
-  width: 300px;
-  margin-top: 80px;
-}
-.lilypad{
-  width: 200px;
-  margin: 15.7em 0 0 0em;
-}
-.white{
-  width: 220px;
-  height: 300px;
-  padding: 0 1px;
-}
-/*------- Carousel Block ---------*/ 
-.vrmedia-gallery{
-  display: flex;
-  align-items: center;
-  gap: 3em;
-  margin:0 2em; 
-  }
-  .carousel-gallery{
-    display: flex;
-    gap: 20px;
-  
-  }
-  ul {
-    list-style-type: none;
-  }
-  .carousel-gallery a span{
-    display: flex;
-    justify-content: left;
-    font-size: 17px;
-
-  }
-  .cImg{
-    width: 300px;
-  }
-  .collectionBtn{
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-  }
-  .collectionBtn button{
-    color: #800020;
-    font-weight: 600;
-    font-size: 28px;
-    border: none;
-    
-  }
-  .collectionBtn .fa-solid {
-    font-size: 32px;
-  }
-  .arrows{
-    width: 20px;
-  }
-
-/*------- Weding Block ---------*/ 
-  .weddingBlock{
-    background: rgb(239,239,239);
-    background: linear-gradient(0deg, #efefef 0%, #c9a9a6 20%, #c9a9a6 90%, #efefef 100%); 
-  }
-  .weddingCollection{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 2em; 
-  }
-  .wBleft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .wBlImg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .wBlImg h2{
-    font-size: 1.6em;
-    letter-spacing: 0.3em;
-    margin: 1em 0;
-    font-weight: 100;
-  }
-  .wBlText button{
-    margin: 1em 0;
-    font-size: 25px;
-    font-weight: 600;
-    color: #800020;
-    border: none;
-    background-color: transparent;
-
-  }
-  .slanted-line {
-    width: 850px; /* Adjust as needed */
-    height: 2px; /* Adjust thickness as needed */position: absolute;
-    margin: -380px 0 0 -200px;
-    background-color: black; /* Adjust color as needed */
-    transform: rotate(-45deg); /* Adjust angle as needed */
-  }
-  .box{
-    width: 250px; 
-  }
-  .wed{
-    width: 450px;
-  }
-/*------- Wholesale Block ---------*/ 
-
-.wholesale{
-  background-image: url("Images/brownring.webp");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  margin: 10em 0;
-}
-.wSblock{
-  display: flex;
-  justify-content: space-evenly;
- 
-}
-.wLeft{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- gap: 10em;
- 
-  
-}
-.wLeft h4{
-  color: #efefef;
-  font-size: 1.5em;
-  margin: 2em 0 0 -3em;
-}
-.wLeft h1{
-  color: #efefef;
-  font-size: 3em;
-  margin: 2em 0 -3em 0;
-}
-.wLeft span{
-  font-weight: 600;
-  color: #800020;
-}
-.wLeft button{
-  color:#efefef;
-  font-size: 1.5em;
-  border: none;
-  background-color: transparent;
-}
-.wRtop{
-  display: flex;
-  gap: 3em;
-}
-.wRight{
-  display: flex;
-  flex-direction: column;
-  gap: 25em;
-  justify-content: space-evenly;
-  margin-top: 2em;
-}
-.wRtop img{
-  width: 150px;
-}
-.wRbottom img{
-  width: 300px;
-}
-/*------- Footer Block ---------*/ 
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 7em 5em -20em 5em;
-}
-.fSocialBlock{
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  align-items: flex-start;
-  gap: 2em;
-}
-.sBtext h1{
+  justify-content: left;
   font-size: 2em;
 }
-.sBtext h2{
-  font-size: 1.5em;
+.cImg{
+  width: 25em;
 }
-.sBlinks a{
+.collectionBtn{
   display: flex;
-  font-size: 1.3em;
-  font-weight: 600;
-  align-items: flex-start;
-  text-decoration: none;
+  justify-content: center;
+  margin: 2em;
 }
-.tags a{
-  display: flex;
-  flex-direction: column;
-  font-size: 1.3em;
-  font-weight: 600;
-  align-items: flex-start;
-  text-decoration: none;
-}
-}
-
-
-
-
-
-@media(max-width:1024px){
-  /*---- TOP HEADER---------*/
-.topHeader{
-  position: fixed;
-   display: flex;
-   justify-content: space-between;
-   align-items:center;
-   margin: -160px 0 0 0 ;
- 
- }
- .topHeader button{
-   color: #efefefff;
-   font-size: 1.5em;
-   background-color: transparent;
-   border: none;
-   margin: 0;
-   text-shadow: 1px 1px 3px #000000;
- }
- .hBsleft{
-  margin: 0 .4em 0 .4em;
- }
- .hBleft img{
-   width: 8em;
-   margin: 1em 2em 0 -2em;
- }
- .hBright {
-   margin: 0;
- }
- .hBright a{
-   margin-left: 1em;
-   text-shadow: 1px 1px 3px #000000;
-   font-size: .7em;
- }
- /*---- BOTTOM HEADER---------*/
- .bottomHeader{
-   margin:0 0 0 13em ;
-   padding: 0em 0  30em 0;
-   /*background-color: #80002068 */
- } 
- .hTitle {
-   color: white;
-   font-size: 5em;
-   margin: 2em 0 0 -2em;
- }
- .word1{
-   width: 200px;
-   margin: 0 0 -50px 0;
- }
- .word2{
-   width: 600px;
-   margin:.5em 0 0 .2em;
- }
- .h2Title {
-   font-weight: 100;
-   color: #efefefff;
-   font-size: 4em;
-   margin: -.7em 0 0 1.6em;
-  
- }
- .sBblock button{
-  font-size: 13px;
-   color: rgb(0,0,0);
-   padding: 1.2em;
-   margin: 6em 0 0 10em;
- }
- .sBblock button:hover{
-   color: #efefefff;
-   background-color:#800020;
-   border: none;
- }
-/*------- Intro Block ---------*/
-.introBlock{
-  display: flex;
-  margin:0 2em 4em 2em;
-}
-.introBlockCenter{
- margin:6em 3em;
-}
-.oTblock h1{
-  color:#C9A9A6;
-  font-size: 1.9em;
-  margin-bottom: 2em;
-}
-.oTblock p{
-  width: 18em;
-  font-size: 1.1em;
-}
-.lMbtn {
+.collectionBtn button{
   color: #800020;
   font-weight: 600;
-  font-size: 1em;
-  margin: 2em  0;
-}
-.hands{
-  width: 18em;
-  height: 14em;
-  margin:25em 0 0 -20em;
-}
-.cup{
-  width: 20em;
-}
-/*------- Collection Block ---------*/
-
-.collectionBlock{
-  display: flex;
-  flex-direction: row-reverse;
-
-  padding: 3em ;
-}
-.tContainer{
-  margin:80px 0em 0 0em;
-}
-.tContainer h3{
-  font-size: 20px;
-}
-.tContainer h1{
-  font-size: 35px;
-}
-.tContainer p{
-  position: absolute;
-  font-size: 20px;
-  width: 350px;
-}
-
-.tLcontainer p{
-  font-size: 18px;
-  width: 350px;
-  margin:1em 0;
-}
-
-.chair{
-  width: 250px;
-  margin-top: 80px;
-}
-.lilypad{
-  width: 150px;
-  margin: 12.4em 0 0 0em;
-}
-.white{
-  width: 180px;
-  height: 200px;
-  padding: 0 1px;
-}
-}
-/* ----------  Phone ------------*/
-@media(max-width:690px){
-
-}
-@media(max-width:425px){
+  font-size: 32px;
+   border: none;
   
 }
+.collectionBtn .fa-solid {
+  font-size: 32px;
+}
 
+
+#four {
+  display: none;
+}
+#five {
+  display: none;
+}
+#six {
+  display: none;
+}
+#seven {
+  display: none;
+}
+#eight {
+  display: none;
+}
+.arrows{
+  width: 20px;
+}
+
+}
