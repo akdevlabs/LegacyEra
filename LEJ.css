@@ -98,12 +98,6 @@ body{
    background-color:#800020;
    border: none;
  }
-
-
-
-
-
-
  /*------ Main ------*/
  main{
    margin: 400px 0;
@@ -838,14 +832,79 @@ ul {
  .introBlock{
     margin:2em;
  }
-  .hands{
-    width: 20em;
-    height: 14em;
-    margin-top:18em ;
-  }
-  .cup{
-    width: 28em;
-  }
+  
+.introBlockCenter{
+ width: 100%;
+}
+.oTblock{
+  width: 18em;
+
+}
+
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+.oTblock p{
+  font-size: 1.6em;
+  text-align: justify;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 4em  0;
+}
+.hands{
+  display: none;
+}
+.cup{
+  width: 26em;
+}
+
+ /*------- Intro Block ---------*/
+ .introBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:8em;
+}
+.introBlockCenter{
+ width: 100%;
+ margin:10em 8em ;
+}
+.oTblock h1{
+  color:#C9A9A6;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+.oTblock p{
+  
+  font-size: 1.6em;
+  text-align: justify;
+}
+.lMbtn {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 4em  0;
+}
+.hands{
+  width: 25em;
+  height: 19em;
+  margin-top:18em ;
+  
+}
+.cup{
+  width: 35em;
+
+}
+
+
+
+
+
   /*------- Collection Block ---------*/ 
   .collectionSection{
     display: flex;
@@ -867,7 +926,7 @@ ul {
     align-items: flex-start;
   }
   .chair{
-    width: 30em;
+    width: 20em;
   }
   .tLcontainer p{
     text-align: justify;
@@ -912,7 +971,7 @@ ul {
     margin: -5em 0 0 -10em ;
   }
   .lilypad{
-    width: 15em;
+    width: 10em;
   }
   .white{
     width: 17em;
