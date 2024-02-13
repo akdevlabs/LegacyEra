@@ -780,7 +780,7 @@ ul {
 }
 @media(max-width:1180px){ 
  .hBright a{
-    font-size: .8em;
+    font-size: .7em;
  }
  .topHeader{
     position:fixed;
