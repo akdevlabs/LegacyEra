@@ -1,0 +1,1436 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Cormorant', serif;
+  
+}
+body{
+  width: 100%;
+  background-color: #efefefff;
+}
+/*---- HEADER---------*/
+#navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.mobileMenu{
+  display: none;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #800020;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 2em;
+  display: block;
+  transition: 0.3s;
+}
+.m1{
+  color: #efefef;
+}
+.sidenav a .fa-solid {
+  font-size: 1em;
+  margin: 1em 0;
+}
+.sidenav a:hover {
+  color: #C9A9A6;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*---- TOP HEADER---------*/
+.topHeader{
+   position:fixed;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   align-items:center;
+   padding: 1em;
+}
+.topHeader button{
+   color: #000000;
+   font-size: 2.8em;
+   background-color: transparent;
+   border: none;
+   margin: 0 2em; 
+}
+.hBleft {
+  margin: 0 3em ;
+}
+.hBleft img{
+   width: 20em;
+}
+.hBright {
+   margin: 0 3em ;
+}
+.hBright a{
+   margin-left: 3em;
+   text-shadow: .15em 1px 3px #000000;
+}
+.center-Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 2em;
+}
+/*------- Form Container ---------*/ 
+
+/*------- Left Block--------*/
+.formContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+.fCimg-block{
+  background-color: #C9A9A6;
+  padding: 5em 17em;
+}
+.fCimg-block img{
+  width: 31em;
+}
+/*------ Right Block -------*/
+.formBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin:0 4em;
+  gap: 2em;
+}
+.formBlock h1{
+  font-size: 5em;
+  color: #00000098;
+}
+.formBlock p{
+  width: 30em;
+  font-size: 1.5em;
+  color: #00000098;
+}
+.formBlock h3{
+  font-size: 2.5em;
+  color: #00000098;
+}
+/*------ form Block -------*/
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.nBlock{
+  display: flex;
+  gap: 2em;
+}
+.iBlock{
+  display: flex;
+  margin-top: -5em;
+  gap: 2em;
+}
+.bBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30em;
+  gap: 2em;
+}
+.bName{
+  width: 10em;
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: column;
+  margin:0 -.5em ;
+}
+#messageInput{
+  height: 6em;
+  width: 32em;
+  border: none;
+}
+.bBlock button{
+  font-size: 2em;
+  width: 10em;
+  padding: .5em 1em;
+  color: #efefef;
+  background-color: #800020;
+}
+input{
+  height: 1.5em;
+  border: none;
+}
+.contactBlock{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6em 0;
+}
+.cBLimg{
+  display: flex;
+  align-items: center;
+}
+.cBl2{
+  margin:0 0 -200px -100px ;
+}
+.cBTags{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 4em;
+}
+.cBTags h1{
+ font-size: 3em;
+}
+.cBTags a{
+  font-size: 2em;
+}
+.cBLimg img{
+  width: 20em;
+}
+.cBRimg img{
+  width: 33em;
+}
+/*------- Mobile Wholesale Block ---------*/ 
+.Mwholesale{
+  display: none;
+}
+/*------- Wholesale Block ---------*/ 
+.video-container-bottom {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2; /* Ensure video is behind other content */
+}
+#video-background-bottom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /
+}
+.wSblock{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+.wLeft{
+  display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 8em;
+  margin: -70em 0 0 0em;
+}
+.wTbanner .span{
+  color: #800020;
+  font-size: 1.5em;
+  padding: 0 .2em;
+}
+.wTbanner p{
+  color: #efefef;
+  font-size: 1.8em;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.span {
+  display: inline-block;
+  opacity: 1;
+  filter: blur(4px);
+}
+.wLeft h1{
+  color: #efefef;
+  font-size: 6em;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+.wLeft button{
+  color:#800020;
+  font-size: 2em;
+  font-weight: 600;
+  border: none;
+  border-radius: .2em;
+  background-color: #efefefb8;
+  margin:0 7em ;
+  padding: .2em 1em;
+  opacity: 0;
+}
+.span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.wLeft h1:nth-child(2) {
+  animation: fade-in 3s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.wLeft button:nth-child(3) {
+  animation: fade-in 5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.wRbottom img{
+ position: relative; 
+ width: 17em;
+ margin:-20em 0 0 0;
+}
+/*------- Footer Block ---------*/ 
+.line1{
+  
+  height: 3px;
+  width: auto;
+  margin: 3em 8em -8em 8em;
+  background-color: #800020;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10em 15em -20em 15em;
+}
+.fSocialBlock{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
+}
+.sBtext h1{
+  font-size: 2em;
+}
+.sBtext h2{
+  font-size: 1.5em;
+}
+.sBlinks a{
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.tags a{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
+a:link {
+  color: #000000;
+}
+a:visited {
+  color:  #000000;
+}
+a:hover {
+  color: #800020;
+}
+a:active {
+  color:#C9A9A6;
+}
+@media(max-width:1966px){
+  /*---- TOP HEADER---------*/
+.topHeader button{
+  font-size: 2.5em;
+  margin: 0 1em; 
+}
+.hBleft {
+ margin: 0 3em ;
+}
+.hBleft img{
+  width: 18em;
+}
+/*------- Form Container ---------*/ 
+.formContainer{
+ display: flex;
+ flex-direction: row;
+ margin: 2em;
+}
+.fCimg-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-color: #C9A9A6;
+ padding: 5em 17em;
+}
+.fCimg-block img{
+ width: 31em;
+}
+
+.formBlock p{
+  width: 20em;
+  font-size: 1.5em;
+  color: #00000098;
+}
+/*------- Wholesale Block ---------*/ 
+.video-container-bottom {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2; /* Ensure video is behind other content */
+}
+#video-background-bottom {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /
+}
+.wSblock{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4em;
+}
+.wLeft{
+  display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: center;
+ gap: 8em;
+  margin: -70em 0 0 0em;
+}
+.wTbanner span{
+  color: #800020;
+  font-size: 1.5em;
+  padding: 0 .2em;
+}
+.wTbanner p{
+  color: #efefef;
+  font-size: 1.8em;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+.span {
+  display: inline-block;
+  opacity: 1;
+  filter: blur(4px);
+}
+.wLeft h1{
+  color: #efefef;
+  font-size: 6em;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+.wLeft button{
+  color:#800020;
+  font-size: 2em;
+  font-weight: 600;
+  border: none;
+  border-radius: .2em;
+  background-color: #efefefb8;
+  margin:0 7em ;
+  padding: .2em 1em;
+  opacity: 0;
+}
+.span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.wLeft h1:nth-child(2) {
+  animation: fade-in 3s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+.wLeft button:nth-child(3) {
+  animation: fade-in 5s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.wRbottom img{
+ position: relative; 
+ width: 17em;
+ margin:-20em 0 0 0;
+}
+}
+@media(max-width:1647px){
+/*---- TOP HEADER---------*/
+
+.topHeader button{
+  font-size: 2em;
+  margin: 0 1em; 
+}
+.hBleft {
+ margin: 0 2em ;
+}
+.hBleft img{
+  width: 14em;
+}
+.hBright {
+  margin: 0 2em ;
+}
+.hBright a{
+  margin-left: 2em;
+}
+/*------- Form Container ---------*/ 
+
+/*------- Left Block--------*/
+.formContainer{
+ display: flex;
+
+ flex-direction: row;
+justify-content: center;
+ margin: 2em;
+}
+.fCimg-block{
+  display: flex;
+ align-items: center;
+ align-content: center;
+ justify-content: center;
+  background-color: #C9A9A6;
+ padding: 5em 5em;
+ width: 100%;
+}
+.fCimg-block img{
+ width: 31em;
+}
+/*------ Right Block -------*/
+.formBlock{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 100%;
+ margin:0 0 0 4em ;
+ gap: 2em;
+}
+.formBlock h1{
+ font-size: 5em;
+ color: #00000098;
+}
+.formBlock p{
+ width: 20em;
+ font-size: 1.5em;
+ color: #00000098;
+}
+.formBlock h3{
+ font-size: 2.5em;
+ color: #00000098;
+}
+/*------ form Block -------*/
+form{
+ display: flex;
+ flex-direction: column;
+ gap: 2em;
+}
+.nBlock{
+ display: flex;
+ gap: 2em;
+}
+.iBlock{
+ display: flex;
+ margin-top: -5em;
+ gap: 2em;
+}
+.bBlock{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 30em;
+ gap: 2em;
+}
+.bName{
+ width: 10em;
+ display: flex;
+ font-size: 1.5em;
+ flex-direction: column;
+ margin:0 -.5em ;
+}
+#messageInput{
+ height: 6em;
+ width: 32em;
+ border: none;
+}
+.bBlock button{
+ font-size: 2em;
+ width: 10em;
+ padding: .5em 1em;
+ color: #efefef;
+ background-color: #800020;
+}
+input{
+ height: 1.5em;
+ border: none;
+}
+.contactBlock{
+ display: flex;
+ justify-content: space-evenly;
+ margin: 6em 0;
+}
+.cBLimg{
+ display: flex;
+ align-items: center;
+}
+.cBl2{
+ margin:0 0 -200px -100px ;
+}
+.cBTags{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ margin: 0 4em;
+}
+.cBTags h1{
+font-size: 2em;
+}
+.cBTags a{
+ font-size: 1.5em;
+}
+.cBLimg img{
+ width: 14em;
+}
+.cBRimg img{
+ width: 25em;
+}
+/*------- Wholesale Block ---------*/ 
+.video-container-bottom {
+ z-index: -1; 
+}
+.wSblock{
+ margin: 0 2em;
+}
+.wLeft{
+gap: 4em;
+ margin: -50em 0 0 0em;
+}
+.wTbanner span{
+ font-size: 1.2em;
+ padding: 0 .2em;
+}
+.wTbanner p{
+ color: #efefef;
+ font-size: 1.6em;
+ transform: scale(0.94);
+ animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.wLeft h1{
+ color: #efefef;
+ font-size: 5em;
+ display: inline-block;
+ opacity: 0;
+ filter: blur(4px);
+}
+.wLeft button{
+ color:#800020;
+ font-size: 2em;
+ font-weight: 600;
+ border: none;
+ border-radius: .2em;
+ background-color: #efefefb8;
+ margin:0 7em ;
+ padding: .2em 1em;
+ opacity: 0;
+}
+
+
+
+/*------- Footer Block ---------*/ 
+footer{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 10em 15em -20em 15em;
+}
+.fSocialBlock{
+ display: flex;
+ flex-direction: column;
+ align-content: flex-start;
+ align-items: flex-start;
+ gap: 2em;
+}
+.sBtext h1{
+ font-size: 2em;
+}
+.sBtext h2{
+ font-size: 1.5em;
+}
+.sBlinks a{
+ display: flex;
+ font-size: 1.3em;
+ font-weight: 600;
+ align-items: flex-start;
+ text-decoration: none;
+}
+.tags a{
+ display: flex;
+ flex-direction: column;
+ font-size: 1.3em;
+ font-weight: 600;
+ align-items: flex-start;
+ text-decoration: none;
+}
+
+}
+@media(max-width:1300px){
+/*---- TOP HEADER---------*/
+
+.topHeader button{
+  font-size: 1.8em;
+  margin: 0 1em; 
+}
+.hBleft {
+ margin: 0 .5em ;
+}
+.hBleft img{
+  width: 10em;
+}
+.hBright {
+  margin: 0 3em ;
+}
+.hBright a{
+  font-size: .8em;
+  margin-left: 2em;
+}
+/*------- Form Container ---------*/ 
+
+/*------- Left Block--------*/
+.formContainer{
+
+ margin: 2em;
+}
+.fCimg-block{
+ padding: 3em 3em;
+}
+.fCimg-block img{
+ width: 25em;
+}
+/*------ Right Block -------*/
+.formBlock{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 100%;
+ margin:0 0 0 2em ;
+ gap: 2em;
+}
+.formBlock h1{
+ font-size: 3em;
+}
+.formBlock p{
+ width: 22em;
+ font-size: 1.3em;
+ color: #00000098;
+}
+.formBlock h3{
+ font-size: 2em;
+ color: #00000098;
+}
+/*------ form Block -------*/
+form{
+ display: flex;
+ flex-direction: column;
+ gap: 2em;
+}
+.nBlock{
+ display: flex;
+ gap: 2em;
+}
+.iBlock{
+ display: flex;
+ margin-top: -5em;
+ gap: 2em;
+}
+.bBlock{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 30em;
+ gap: 2em;
+}
+.bName{
+ width: 10em;
+ display: flex;
+ font-size: 1.5em;
+ flex-direction: column;
+ margin:0 -.5em ;
+}
+#messageInput{
+ height: 6em;
+ width: 32em;
+ border: none;
+}
+.bBlock button{
+ font-size: 2em;
+ width: 8em;
+ padding: .3em 1em;
+ color: #efefef;
+ background-color: #800020;
+}
+input{
+ height: 1.5em;
+ width: 10em;
+ border: none;
+}
+
+/*------- Contact Block ---------*/ 
+
+.contactBlock{
+ display: flex;
+ justify-content: space-evenly;
+ margin: 6em 0;
+}
+.cBLimg{
+ display: flex;
+ align-items: center;
+}
+.cBl2{
+ margin:0 0 -200px -100px ;
+}
+.cBTags{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ margin: 0 2em;
+}
+.cBTags h1{
+font-size: 1.5em;
+}
+.cBTags a{
+ font-size: 1.2em;
+}
+.cBLimg img{
+ width: 12em;
+}
+.cBRimg img{
+ width: 27em;
+}
+/*------- Wholesale Block ---------*/ 
+.video-container-bottom {
+ z-index: -1; 
+}
+.wSblock{
+ margin: 0 2em;
+}
+.wLeft{
+gap: 4em;
+ margin: -50em 0 0 0em;
+}
+.wTbanner span{
+ font-size: 1.2em;
+ padding: 0 .2em;
+}
+.wTbanner p{
+ color: #efefef;
+ font-size: 1.6em;
+ transform: scale(0.94);
+ animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+.wLeft h1{
+ color: #efefef;
+ font-size: 5em;
+ display: inline-block;
+ opacity: 0;
+ filter: blur(4px);
+}
+.wLeft button{
+ color:#800020;
+ font-size: 2em;
+ font-weight: 600;
+ border: none;
+ border-radius: .2em;
+ background-color: #efefefb8;
+ margin:0 7em ;
+ padding: .2em 1em;
+ opacity: 0;
+}
+
+
+
+/*------- Footer Block ---------*/ 
+footer{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 10em 15em -20em 15em;
+}
+.fSocialBlock{
+ display: flex;
+ flex-direction: column;
+ align-content: flex-start;
+ align-items: flex-start;
+ gap: 2em;
+}
+.sBtext h1{
+ font-size: 2em;
+}
+.sBtext h2{
+ font-size: 1.5em;
+}
+.sBlinks a{
+ display: flex;
+ font-size: 1.3em;
+ font-weight: 600;
+ align-items: flex-start;
+ text-decoration: none;
+}
+.tags a{
+ display: flex;
+ flex-direction: column;
+ font-size: 1.3em;
+ font-weight: 600;
+ align-items: flex-start;
+ text-decoration: none;
+}
+}
+@media(max-width:1040px){
+  /*---- TOP HEADER---------*/
+  .topHeader button{
+    font-size: 1.5em;
+    margin: 0 1em; 
+  }
+  .hBleft {
+   margin: 0 .5em ;
+  }
+  .hBleft img{
+    width: 10em;
+  }
+  .hBright {
+    margin: 0 3em ;
+  }
+  .hBright a{
+    font-size: .8em;
+    margin-left: 2em;
+  }
+  /*------- Form Container ---------*/ 
+  
+  /*------- Left Block--------*/
+  .formContainer{
+  
+   margin: 2em;
+  }
+  .fCimg-block{
+   padding: 3em 3em;
+  }
+  .fCimg-block img{
+   width: 25em;
+  }
+  /*------ Right Block -------*/
+  .formBlock{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   margin:0 0 0 2em ;
+   gap: 2em;
+  }
+  .formBlock h1{
+   font-size: 3em;
+  }
+  .formBlock p{
+   width: 22em;
+   font-size: 1.3em;
+   color: #00000098;
+  }
+  .formBlock h3{
+   font-size: 2em;
+   color: #00000098;
+  }
+  /*------ form Block -------*/
+  form{
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+  }
+  .nBlock{
+   display: flex;
+   gap: 2em;
+  }
+  .iBlock{
+   display: flex;
+   margin-top: -5em;
+   gap: 2em;
+  }
+  .bBlock{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 30em;
+   gap: 2em;
+  }
+  .bName{
+   width: 10em;
+   display: flex;
+   font-size: 1.5em;
+   flex-direction: column;
+   margin:0 -.5em ;
+  }
+  #messageInput{
+   height: 6em;
+   width: 32em;
+   border: none;
+  }
+  .bBlock button{
+   font-size: 2em;
+   width: 8em;
+   padding: .3em 1em;
+   color: #efefef;
+   background-color: #800020;
+  }
+  input{
+   height: 1.5em;
+   width: 10em;
+   border: none;
+  }
+  
+  /*------- Contact Block ---------*/ 
+  
+  .contactBlock{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 6em 0;
+  }
+  .cBLimg{
+   display: flex;
+   align-items: center;
+  }
+  .cBl2{
+   margin:0 0 -200px -100px ;
+  }
+  .cBTags{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   margin: 0 2em;
+  }
+  .cBTags h1{
+  font-size: 1.5em;
+  }
+  .cBTags a{
+   font-size: 1.2em;
+  }
+  .cBLimg img{
+   width: 12em;
+  }
+  .cBRimg img{
+   width: 27em;
+  }
+  /*------- Wholesale Block ---------*/ 
+  .video-container-bottom {
+   z-index: -1; 
+  }
+  .wSblock{
+   margin: 0 2em;
+  }
+  .wLeft{
+  gap: 4em;
+   margin: -50em 0 0 0em;
+  }
+  .wTbanner span{
+   font-size: 1.2em;
+   padding: 0 .2em;
+  }
+  .wTbanner p{
+   color: #efefef;
+   font-size: 1.6em;
+   transform: scale(0.94);
+   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  
+  .wLeft h1{
+   color: #efefef;
+   font-size: 5em;
+   display: inline-block;
+   opacity: 0;
+   filter: blur(4px);
+  }
+  .wLeft button{
+   color:#800020;
+   font-size: 2em;
+   font-weight: 600;
+   border: none;
+   border-radius: .2em;
+   background-color: #efefefb8;
+   margin:0 7em ;
+   padding: .2em 1em;
+   opacity: 0;
+  }
+  
+  
+  
+  /*------- Footer Block ---------*/ 
+  footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 10em 15em -20em 15em;
+  }
+  .fSocialBlock{
+   display: flex;
+   flex-direction: column;
+   align-content: flex-start;
+   align-items: flex-start;
+   gap: 2em;
+  }
+  .sBtext h1{
+   font-size: 2em;
+  }
+  .sBtext h2{
+   font-size: 1.5em;
+  }
+  .sBlinks a{
+   display: flex;
+   font-size: 1.3em;
+   font-weight: 600;
+   align-items: flex-start;
+   text-decoration: none;
+  }
+  .tags a{
+   display: flex;
+   flex-direction: column;
+   font-size: 1.3em;
+   font-weight: 600;
+   align-items: flex-start;
+   text-decoration: none;
+  }
+  }
+
+/*---------- tablet-------*/
+@media(max-width:768px){
+/*---- TOP HEADER---------*/
+.topHeader{
+  display: none;
+}
+.mobileMenu{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: .5em;
+}
+.slogo{
+  width: 20em;
+  padding: 0 14em 0 8em;
+}
+.openNav{
+  font-size: 2em;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*------- main ---------*/ 
+.center-Block{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin:0;
+}
+/*------- Form Container --------*/
+.formContainer{
+  display: flex;
+  flex-direction: column;
+}
+.fCimg-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #C9A9A6;
+  padding:0;
+}
+.fCimg-block img{
+  width: 31em;
+}
+/*------- Contact Container --------*/
+.contactBlock{
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+}
+.cBLimg{
+  margin: 0 0 0;
+}
+.cBTags{
+  margin: -10em 0 10em 20em;
+}
+.cBTags h1{
+  font-size: 2.5em;
+}
+.cBTags a{
+  font-size: 1.6em;
+}
+.cBRimg img{
+  width: 20em;
+  margin: -5em 0 0em 22em;
+}
+
+/*------- Wholesale Block ---------*/ 
+.wholesale{
+  display: none;
+ }
+ .Mwholesale{
+   display: flex;
+   flex-direction:row;
+   background-image: url("Images/background.webp");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ width: 100%;
+ height: 20em;
+ 
+ }
+ .mWimg img{
+   width: 10em;
+   background-color: #800020;
+ }
+ .mwBlock{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ }
+ .Mwholesale{
+  display: flex;
+  color: #efefef;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .mwBlock p{
+    color: #efefef;
+    font-size: 1.2em;
+ }
+ .mwBlock button {
+  color: #800020;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+
+/*------- Footer Block ---------*/ 
+.line1{
+  height: 3px;
+  width: auto;
+  margin: 3em 2em 0em 2em;
+  background-color: #800020;
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+}
+.fSocialBlock{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 2em;
+}
+.sBtext h1{
+  font-size: 2em;
+}
+.sBtext h2{
+  font-size: 1.5em;
+}
+.sBlinks a{
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
+.tags a{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+}
+
+/*--------- Phone ---------*/
+
+@media(max-width:425px){
+  .topHeader{
+    display: none;
+  }
+  .mobileMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: .5em;
+  }
+  .slogo{
+    width: 20em;
+    padding: 0 ;
+    
+  }
+  .openNav{
+    font-size: 2em;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*------- main ---------*/ 
+  .center-Block{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin:0;
+  }
+  /*------- Form Container --------*/
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .fCimg-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #C9A9A6;
+    padding:0;
+    
+  }
+  .fCimg-block img{
+    width: 20em;
+  }
+  /*------- Contact Container --------*/
+  .contactBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
+  }
+  .cBLimg{
+    display: none;
+  }
+  .cBTags{
+    margin: 0em 0 10em 0em;
+  }
+  .cBTags h1{
+    font-size: 2.5em;
+  }
+  .cBTags a{
+    font-size: 1.6em;
+  }
+  .cBRimg img{
+    width: 20em;
+    margin: -5em 0 0em 0em;
+  }
+  
+  /*------- Wholesale Block ---------*/ 
+  .wholesale{
+    display: none;
+   }
+   .Mwholesale{
+     display: flex;
+     flex-direction:row;
+     background-image: url("Images/background.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 20em;
+   
+   }
+   .mWimg img{
+     width: 10em;
+     background-color: #800020;
+   }
+   .mwBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .Mwholesale{
+    display: flex;
+    color: #efefef;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   .mwBlock p{
+      color: #efefef;
+      font-size: 1.2em;
+   }
+   .mwBlock button {
+    color: #800020;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  
+  
+  /*------- Footer Block ---------*/ 
+  .line1{
+    height: 3px;
+    width: auto;
+    margin: 3em 2em 0em 2em;
+    background-color: #800020;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+  }
+  .fSocialBlock{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 2em;
+  }
+  .sBtext h1{
+    font-size: 2em;
+  }
+  .sBtext h2{
+    font-size: 1.5em;
+  }
+  .sBlinks a{
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 600;
+    align-items: flex-start;
+    text-decoration: none;
+  }
+  .tags a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    font-weight: 600;
+    align-items: flex-start;
+    text-decoration: none;
+  }
+  
+  }
+}
+@media(max-width:375px){
+
+}
+@media(max-width:320px){
+
+}
